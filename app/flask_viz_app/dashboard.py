@@ -1,8 +1,13 @@
-import plotly.express as px
+
+import dash
 
 import dash_core_components as dcc
 import dash_html_components as html
 import dash_bootstrap_components as dbc
+
+import plotly.express as px
+
+import data_processing.processing as p
 
 def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_per_subcategory_month):
     """
@@ -49,3 +54,10 @@ def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_p
     ], fluid=True)
 
     return layout
+
+
+# Create Dash app
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+
+# Inject layout to Dash App
+app.layout = create_layout(*p.data)

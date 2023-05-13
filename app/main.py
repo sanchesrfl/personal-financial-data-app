@@ -1,15 +1,6 @@
-import dash
-import dash_bootstrap_components as dbc
+import flask_viz_app.dashboard as dashboard
 
-import processing as p
-import layout
 
-# Create Dash app
-app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
-
-# Inject layout to Dash App
-app.layout = layout.create_layout(*p.data)
-
-# Run Web App
+# Run WebDash App
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    dashboard.app.run_server(debug=True)
