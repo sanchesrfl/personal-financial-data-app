@@ -9,7 +9,7 @@ import layout
 path = "data.csv"
 df = data.read_data(path)
 
-# Treats the data
+# Treats minor data entry inconvinients on the data
 df = data.treat_data(df)
 
 # Convert the date column to "YYYY-MM-DD" format
