@@ -17,6 +17,6 @@ Feel free to locally use it for your own personal data expenses analysis. :)
 - Make sure that your data column names matches the ones on the script (data.py) if not, adapt either script or data schema.
 - To run the app go to /app/ and run:
 ```python
-python3 main.app
+python3 main.py
 ```
 - Your dashboard will be available at http://127.0.0.1:8050/.
