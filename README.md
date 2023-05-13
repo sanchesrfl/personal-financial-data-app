@@ -12,7 +12,7 @@ web app for analysing expenses data:
 Feel free to locally use it for your own personal data expenses analysis. :)
 
 ##### Data Input
-###### The App expect a simple csv tabular schema of purchase events:
+###### The App expects a simple CSV tabular schema of purchase events:
 | Column | Description | Data-type |
 |--------| ------------| ----------|
 | date | date of purchase on format YYYY-MM-DD | string |
