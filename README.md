@@ -10,3 +10,13 @@ low-code web app for analysing expenses data:
 
 
 Feel free to locally use it for your own personal data expenses analysis. :)
+
+###### Running the Project
+
+- Make sure all dependencies are installed (you can use pip install if not)
+- Make sure that your data column names matches the ones on the script (data.py) if not, adapt either script or data schema.
+- To run the app go to /app/ and run:
+```python
+python3 main.app
+```
+- Your dashboard will be available at http://127.0.0.1:8050/.
