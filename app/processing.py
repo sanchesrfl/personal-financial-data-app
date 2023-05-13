@@ -11,7 +11,7 @@ df = data.treat_data(df)
 df = data.convert_date(df)
 
 # Featuring month
-df['mes'] = df['data'].dt.month
+df['month'] = df['date'].dt.month
 
 # Calculate total expenses per payment type by month
 expenses_per_type_month = data.get_expenses_per_type_month(df)
