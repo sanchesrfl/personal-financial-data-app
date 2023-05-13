@@ -1,4 +1,4 @@
-### Simple personal-financial-data-app
+### Simple Personal Financial Data App
 #### Python App for Treating, analyzing and displaying Personal Financial Data on Flask and Plotly Web App
 
 This simple Python App applies Pandas, plotly, flask and dash functionalities to create a simple yet insightfull 
@@ -9,4 +9,14 @@ low-code web app for analysing expenses data:
 - by type of payment
 
 
-Feel free to locally use it for your own personal data expenses data analysis. :)
+Feel free to locally use it for your own personal data expenses analysis. :)
+
+###### Running the Project
+
+- Make sure all dependencies are installed (you can use pip install if not)
+- Make sure that your data column names matches the ones on the script (data.py) if not, adapt either script or data schema.
+- To run the app go to /app/ and run:
+```python
+python3 main.py
+```
+- Your dashboard will be available at http://127.0.0.1:8050/.
