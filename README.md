@@ -11,7 +11,7 @@ low-code web app for analysing expenses data:
 
 Feel free to locally use it for your own personal data expenses analysis. :)
 
-The App expect a simple csv tabular schema of a purchase event:
+###### The App expect a simple csv tabular schema of a purchase event:
 
 - date | date of purchase on format YYYY-MM-DD (string)
 - payment_type | type of payment (debit, credit..) (string)
