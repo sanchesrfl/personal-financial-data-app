@@ -40,8 +40,8 @@ def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_p
             [
                 dbc.Col(
                     dcc.Graph(
-                        figure=px.bar(expenses_per_subcategory_month, x='mes', y='valor', color='grupo_categoria', 
-                                      labels={'mes': 'Mês', 'valor': 'Valor', 'grupo_categoria': 'Subcategoria'},title='Despesas por subcategoria por mês')))
+                        figure=px.bar(expenses_per_subcategory_month, x='mes', y='valor', color='sub_categoria', 
+                                      labels={'mes': 'Mês', 'valor': 'Valor', 'sub_categoria': 'Subcategoria'},title='Despesas por subcategoria por mês')))
     ]
     
 )
