@@ -11,13 +11,15 @@ web app for analysing expenses data:
 
 Feel free to locally use it for your own personal data expenses analysis. :)
 
-###### The App expect a simple csv tabular schema of a purchase event:
-
-- date | date of purchase on format YYYY-MM-DD (string)
-- payment_type | type of payment (debit, credit..) (string)
-- price | value of the purchase/expanse (string)
-- category | what type of purchase/expanse? (ex: food, gasoline, rent) (string)
-- subcategory | is there a sub-type worth monitoring? (ex: groceries, restaurant, transport) (string)
+##### Data Input
+###### The App expect a simple csv tabular schema of purchase events:
+| Column | Description | Data-type |
+|--------| ------------| ----------|
+| date | date of purchase on format YYYY-MM-DD | string |
+| payment_type | type of payment (debit, credit..) | string |
+| price | value of the purchase/expanse | string |
+| category | what type of purchase/expanse? (ex: food, gasoline, rent) | string |
+| subcategory | is there a sub-type worth monitoring? (ex: groceries, restaurant, transport) | string |
 
 ###### Running the Project
 
