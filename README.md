@@ -11,8 +11,8 @@ web app for analysing expenses data:
 
 Feel free to locally use it for your own personal data expenses analysis. :)
 
-##### Data Input
-###### The App expects a simple CSV tabular schema of purchase events:
+#### Data Input
+##### The App expects a simple CSV tabular schema of purchase events:
 | Column | Description | Data-type |
 |--------| ------------| ----------|
 | date | date of purchase on format YYYY-MM-DD | string |
@@ -21,9 +21,9 @@ Feel free to locally use it for your own personal data expenses analysis. :)
 | category | what type of purchase/expanse? (ex: food, gasoline, rent) | string |
 | subcategory | is there a sub-type worth monitoring? (ex: groceries, restaurant, transport) | string |
 
-###### Running the Project
+##### Running the Project
 
-- Set a file app/.env with a configured env var FINANCIAL_DATA_PATH=your-csv-file-path.
+- Set a file .env inside *app* folder with a configured env var FINANCIAL_DATA_PATH=your-csv-file-path.
 - Make sure all dependencies are installed (you can use pip install if not)
 - Make sure that your data column names matches the ones on the script (data.py) if not, adapt either script or data schema.
 - To run the app go to /app/ and run:
