@@ -7,7 +7,7 @@ import dash_bootstrap_components as dbc
 
 import plotly.express as px
 
-import data_processing.processing as p
+import processing.processing as p
 
 def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_per_subcategory_month):
     """

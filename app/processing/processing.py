@@ -3,8 +3,8 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 
-import data_tools.data_treatment as data_treatment
-import data_tools.data_analysis as data_analysis
+import tools.treatment as treatment
+import tools.analysis as analysis
 
 
 
@@ -29,20 +29,20 @@ def process_data(df):
     Processing of the data and returns a list of Pandas DataFrames.
     """
 
-    df = data_treatment.treat_data(df)
-    df = data_treatment.convert_date(df)
+    df = treatment.treat_data(df)
+    df = treatment.convert_date(df)
 
     # Featuring month
     df['month'] = df['date'].dt.month
 
     # Calculate total expenses per payment type by month
-    expenses_per_type_month = data_analysis.get_expenses_per_type_month(df)
+    expenses_per_type_month = analysis.get_expenses_per_type_month(df)
 
     # Calculate total expenses per category by month
-    expenses_per_category_month = data_analysis.get_expenses_per_category_month(df)
+    expenses_per_category_month = analysis.get_expenses_per_category_month(df)
 
     # Calculate total expenses per subcategory by month
-    expenses_per_subcategory_month = data_analysis.get_expenses_per_subcategory_month(df)
+    expenses_per_subcategory_month = analysis.get_expenses_per_subcategory_month(df)
 
     return [expenses_per_type_month, expenses_per_category_month, expenses_per_subcategory_month]
 
@@ -51,7 +51,7 @@ def run_process_data():
     Trigger for Running all the data processing pipeline. 
     Returns: a list with 3 analytical Pandas DataFrames. 
     """
-    return process_data(data_treatment.read_data(get_dataset_path()))
+    return process_data(treatment.read_data(get_dataset_path()))
 
 
 # Process raw data to create analytical data

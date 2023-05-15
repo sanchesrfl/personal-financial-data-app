@@ -1,4 +1,4 @@
-import data_dashboard.dashboard as dashboard
+import dashboard.dashboard as dashboard
 
 
 # Run WebDash App
