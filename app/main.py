@@ -1,4 +1,4 @@
-import flask_viz_app.dashboard as dashboard
+import data_dashboard.dashboard as dashboard
 
 
 # Run WebDash App

@@ -13,7 +13,7 @@ Feel free to locally use it for your own personal data expenses analysis. :)
 
 #### Data Input
 ##### The App expects a simple CSV tabular schema of purchase events:
-| Column | Description | Data-type |
+| Column | Description | Column-type |
 |--------| ------------| ----------|
 | date | date of purchase on format YYYY-MM-DD | string |
 | payment_type | type of payment (debit, credit..) | string |

@@ -36,7 +36,7 @@ def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_p
                     dcc.Graph(
                         figure=px.bar(expenses_per_category_month, x='month', y='price', color='category', 
                                       labels={'month': 'Month', 'price': 'Price', 'category': 'Category'},
-                                      title='Expenses per category and month')
+                                      title='Expenses per category and month').update_xaxes(tickmode='linear', dtick=1)
                     )
                 )
             ]
