@@ -29,7 +29,7 @@ Feel free to locally use it for your own personal data expenses analysis. :)
  pip install -r ./app/requirements.txt
  ```
 - Make sure that your data column names matches the ones 
-on the data_tools.data_treatment.treat_data if not, adapt either script or data schema.
+on the tools.treatment.treat_data if not, adapt either script or data schema.
 - To run the app:
 ```python
 python3 ./app/main.py
