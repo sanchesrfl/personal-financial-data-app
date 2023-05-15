@@ -1,5 +1,5 @@
 ### Simple Personal Financial Data App
-#### Python App for Treating, analyzing and displaying Personal Financial Data on Flask and Plotly Web App
+#### Python App for Treating, analyzing and visualizing Personal Financial Data on Flask and Plotly Web App
 
 This simple Python App applies Pandas, plotly, flask and dash functionalities to create a simple yet insightfull 
 web app for analysing expenses data:
