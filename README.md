@@ -24,7 +24,10 @@ Feel free to locally use it for your own personal data expenses analysis. :)
 ##### Running the Project
 
 - Set a file .env inside *app* folder with a configured env var FINANCIAL_DATA_PATH=your-csv-file-path.
-- Make sure all dependencies are installed (you can use pip install if not)
+- Make sure all dependencies are installed if not run:
+```bash
+ pip install -r ./app/requirements.txt
+ ```
 - Make sure that your data column names matches the ones on the script (data.py) if not, adapt either script or data schema.
 - To run the app go to /app/ and run:
 ```python
