@@ -25,7 +25,7 @@ def create_layout(expenses_per_type_month,expenses_per_category_month,expenses_p
                     dcc.Graph(
                         figure=px.line(expenses_per_type_month, x='month', y='price', color='payment_type', 
                                        labels={'month': 'Month', 'price': 'Price', 'payment_type': 'Payment Type'},
-                                       title='Expenses per type and month')
+                                       title='Expenses per type and month').update_xaxes(tickmode='linear', dtick=1)
                     )
                 )
             ]

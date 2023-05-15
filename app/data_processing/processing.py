@@ -46,13 +46,13 @@ def process_data(df):
 
     return [expenses_per_type_month, expenses_per_category_month, expenses_per_subcategory_month]
 
-def run_process_data(path):
+def run_process_data():
     """
     Trigger for Running all the data processing pipeline. 
     Returns: a list with 3 analytical Pandas DataFrames. 
     """
-    return process_data(data_treatment.read_data(path))
+    return process_data(data_treatment.read_data(get_dataset_path()))
 
 
 # Process raw data to create analytical data
-data = run_process_data(get_dataset_path())
+data = run_process_data()
